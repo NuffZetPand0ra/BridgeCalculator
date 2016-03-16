@@ -1,9 +1,10 @@
 <?php
+require_once 'conf.php';
 require_once 'pbnFormatter.php';
 require_once 'bridgeHelper.php';
 class bcalc{
 	private $formatter = null;
-	private $bcalc_path = 'bcalconsole';
+	private $bcalc_path = BCALC_PATH;
 	public $tricks = false;
 	function __construct($formatter){
 		$this->formatter = $formatter;
