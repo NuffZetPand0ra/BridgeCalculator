@@ -3,7 +3,7 @@ require_once 'pbnFormatter.php';
 require_once 'bridgeHelper.php';
 class bcalc{
 	private $formatter = null;
-	private $bcalc_path = 'bcalc\bcalconsole';
+	private $bcalc_path = 'bcalconsole';
 	public $tricks = false;
 	function __construct($formatter){
 		$this->formatter = $formatter;
