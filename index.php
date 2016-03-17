@@ -106,7 +106,7 @@ if(isset($_POST['data']) && strlen($_POST['data'])>0){
 	<form method="post" accept-charset="UTF-8">
 		<textarea name="data" rows="13" cols="30"><?php echo $input; ?></textarea><hr>
 		<input type="radio" name="output" value="pbn"<?php if($format == "pbn") echo " checked "; ?>> PBN file<br>
-		<!--input type="radio" name="output" value="calc"<?php if($format == "calc") echo " checked "; ?>> Calculate tricks<hr-->
+		<!--input type="radio" name="output" value="calc"<?php if($format == "calc") echo " checked "; ?>> Calculate tricks--><hr>
 		<input type="submit" value="Go!">
 	</form>
 	<?php
