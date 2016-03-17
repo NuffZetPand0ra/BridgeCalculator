@@ -13,7 +13,7 @@ class bcalc{
 		$trump = strtolower($trump);
 		$return = false;
 		$options = "-e e -t ".$trump." -l ".$this->formatter->dealer." -d PBN -c \"".$this->formatter->dealToString()."\"";
-		echo "<pre>";var_dump($this->bcalc_path." "." ".$options." ".$flags);echo "</pre>";die();
+		// echo "<pre>";var_dump($this->bcalc_path." "." ".$options." ".$flags);echo "</pre>";die();
 		$return = shell_exec($this->bcalc_path." "." ".$options." ".$flags);
 		if(!$return) return false;
 		$matches = false;
@@ -29,7 +29,6 @@ class bcalc{
 			}
 		}
 		$this->tricks = $tricks;
-		// echo "<pre>";var_dump($tricks);echo "</pre>";die();
 	}
 	function __toString(){
 		return $this->formatHTML();
