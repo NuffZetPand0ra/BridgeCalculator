@@ -1,4 +1,6 @@
 <?php
+namespace Nuffy\Bridgify;
+
 require_once 'conf.php';
 require_once 'pbnFormatter.php';
 require_once 'bridgeHelper.php';
@@ -13,7 +15,7 @@ class bcalc{
 		$trump = strtolower($trump);
 		$return = false;
 		$options = "-e e -t ".$trump." -l ".$this->formatter->dealer." -d PBN -c \"".$this->formatter->dealToString()."\"";
-		echo "<pre>";var_dump($this->bcalc_path." "." ".$options." ".$flags);echo "</pre>";die();
+		// echo "<pre>";var_dump($this->bcalc_path." "." ".$options." ".$flags);echo "</pre>";die();
 		$return = shell_exec($this->bcalc_path." "." ".$options." ".$flags);
 		if(!$return) return false;
 		$matches = false;

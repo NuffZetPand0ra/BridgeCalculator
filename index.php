@@ -1,4 +1,6 @@
 <?php
+namespace Nuffy\Bridgify;
+
 require_once 'pbnFormatter.php';
 require_once 'bcalc.php';
 $input = "";

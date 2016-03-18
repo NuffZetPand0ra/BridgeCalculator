@@ -1,4 +1,6 @@
 <?php
+namespace Nuffy\Bridgify;
+
 class bridgeHelper{
 	static function getColorSymbol($suit){
 		$suit = strtolower($suit);

@@ -1,4 +1,6 @@
 <?php
+namespace Nuffy\Bridgify;
+
 require_once 'pbnFormatter.php';
 if(isset($_GET['data']) && strlen($_GET['data'])>0){
 	$formatter = new pbnFormatter($_GET['data']);

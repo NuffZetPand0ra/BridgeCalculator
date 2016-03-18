@@ -1,4 +1,6 @@
 <?php
+namespace Nuffy\Bridgify;
+
 require_once 'bridgeHelper.php';
 class pbnFormatter{
 	private $input = null;

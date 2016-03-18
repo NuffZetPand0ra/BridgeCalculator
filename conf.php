@@ -1,3 +1,5 @@
 <?php
-define("BCALC_PATH", "bcalconsole");
+namespace Nuffy\Bridgify;
+
+define("BCALC_PATH", "bcalc\bcalconsole");
 ?>
