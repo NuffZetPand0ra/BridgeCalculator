@@ -1,0 +1,3 @@
+[submodule "nuffyDDS"]
+	path = nuffyDDS
+	url = git@github.com:NuffZetPand0ra/nuffyDDS.git
